@@ -150,7 +150,7 @@ export default function PborPMT() {
                     <svg className="w-4 h-4 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
-                    Official RMA Clarifications
+                    Official Road Mileage Allowance Clarifications
                   </h4>
                   <p className="text-[11px] text-slate-600 mt-1">View the detailed entitlement conditions for Road Mileage Allowance based on DG (OL&SM) guidelines.</p>
                 </div>
