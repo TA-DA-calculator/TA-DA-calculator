@@ -66,9 +66,9 @@ export default function OfficerLTC() {
                 <table className="w-full text-left border-collapse text-xs">
                   <thead>
                     <tr className="bg-slate-100 border-b border-slate-200 font-bold text-slate-700">
-                      <th className="p-3">GRADE PAY MATRIX SCALES</th>
-                      <th className="p-3">STANDARD RAIL EXPONENT</th>
-                      <th className="p-3">PREMIUM / SHATABDI / RAJDHANI TIER</th>
+                      <th className="p-3 min-w-[180px]">GRADE PAY MATRIX SCALES</th>
+                      <th className="p-3 min-w-[150px]">STANDARD RAIL EXPONENT</th>
+                      <th className="p-3 min-w-[200px]">PREMIUM / SHATABDI / RAJDHANI TIER</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-slate-200 text-slate-600 bg-white">
@@ -99,7 +99,7 @@ export default function OfficerLTC() {
           {/* B. ROAD MILEAGE */}
           <details className="group border border-slate-200 bg-white rounded-2xl p-4 shadow-sm transition-all duration-200">
             <summary className="flex justify-between items-center font-bold cursor-pointer text-slate-900 hover:text-blue-900 list-none">
-              <span className="flex items-center gap-2">🚗 Road Mileage &amp; Outstation Car Hire</span>
+              <span className="flex items-center gap-2">🚗 Journey by road &amp; Outstation Car Hire</span>
               <span className="transition-transform group-open:rotate-180 text-xs text-slate-400">▼</span>
             </summary>
             <div className="mt-4 border-t border-slate-100 pt-4 text-xs space-y-4">
@@ -107,8 +107,8 @@ export default function OfficerLTC() {
                 <table className="w-full text-left border-collapse text-xs">
                   <thead>
                     <tr className="bg-slate-100 border-b border-slate-200 font-bold text-slate-700">
-                      <th className="p-3">GRADE PAY TRANSIT RANK</th>
-                      <th className="p-3">ROAD MILEAGE ENTITLEMENT MANDATES</th>
+                      <th className="p-3 min-w-[200px]">GRADE PAY TRANSIT RANK</th>
+                      <th className="p-3 min-w-[250px]">ROAD MILEAGE ENTITLEMENT MANDATES</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-slate-200 text-slate-600 bg-white">
@@ -137,22 +137,36 @@ export default function OfficerLTC() {
                 <table className="w-full text-left border-collapse text-xs">
                   <thead>
                     <tr className="bg-slate-100 border-b border-slate-200 font-bold text-slate-700">
-                      <th className="p-3">RANK PROFILE CATEGORIES</th>
-                      <th className="p-3">TRAVEL FLIGHT CLASS SELECTION</th>
+                      {/* Added min-widths to prevent mobile squishing */}
+                      <th className="p-3 min-w-[220px]">RANK PROFILE CATEGORIES</th>
+                      <th className="p-3 min-w-[180px]">TRAVEL FLIGHT CLASS SELECTION</th>
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-slate-200 text-slate-600 bg-white">
                     <tr>
                       <td className="p-3 font-medium text-slate-900">Service Chiefs / Vice Chiefs / Army Commanders &amp; equivalents / DGAFMS / GP ₹10,000+</td>
-                      <td className="p-3"><span className="bg-emerald-50 text-emerald-700 font-bold px-2.5 py-1 rounded-md border border-emerald-200">Business / Club Class</span></td>
+                      <td className="p-3">
+                        {/* Added whitespace-nowrap and inline-block */}
+                        <span className="bg-emerald-50 text-emerald-700 font-bold px-2.5 py-1 rounded-md border border-emerald-200 whitespace-nowrap inline-block">
+                          Business / Club Class
+                        </span>
+                      </td>
                     </tr>
                     <tr>
                       <td className="p-3 font-medium text-slate-900">Grade Pay ₹7,600/-, ₹8,000/-, ₹8,400/-, ₹8,700/-, ₹8,900/-, and ₹9,000/-</td>
-                      <td className="p-3"><span className="bg-slate-100 text-slate-700 px-2.5 py-1 rounded-md border border-slate-200">Economy Class</span></td>
+                      <td className="p-3">
+                        <span className="bg-slate-100 text-slate-700 font-medium px-2.5 py-1 rounded-md border border-slate-200 whitespace-nowrap inline-block">
+                          Economy Class
+                        </span>
+                      </td>
                     </tr>
                     <tr>
                       <td className="p-3 font-medium text-slate-900">Grade Pay ₹5,400/-, ₹5,700/-, ₹6,100/-, and ₹6,600/-</td>
-                      <td className="p-3"><span className="bg-slate-100 text-slate-700 px-2.5 py-1 rounded-md border border-slate-200">Economy Class</span></td>
+                      <td className="p-3">
+                        <span className="bg-slate-100 text-slate-700 font-medium px-2.5 py-1 rounded-md border border-slate-200 whitespace-nowrap inline-block">
+                          Economy Class
+                        </span>
+                      </td>
                     </tr>
                   </tbody>
                 </table>
@@ -160,6 +174,57 @@ export default function OfficerLTC() {
             </div>
           </details>
 
+        </div>
+      </section>
+      
+      {/* LOCAL TRANSIT & DECLARATION RULES */}
+      <section className="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm">
+        <div className="p-4 bg-slate-50 border-b border-slate-200">
+          <h3 className="text-sm font-bold text-slate-800 uppercase tracking-wider flex items-center gap-2">
+            🛣️ Local Transit &amp; Declaration Directives
+          </h3>
+        </div>
+        
+        <div className="p-4 text-xs space-y-4 leading-relaxed text-slate-600">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            
+            {/* Public Transport Available */}
+            <div className="bg-slate-50 p-4 rounded-xl border border-slate-200/60 space-y-2">
+              <span className="font-bold text-blue-900 uppercase tracking-wide text-[11px] flex items-center gap-1.5">
+                <svg className="w-4 h-4 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
+                </svg>
+                Public Transport Available
+              </span>
+              <p>Reimbursement will be strictly limited to the admissible fare by the entitled public transport from the nearest airport, railway station, or bus terminal to the final destination via the <span className="font-semibold text-slate-900">shortest direct route</span>.</p>
+            </div>
+
+            {/* No Public Transport Available */}
+            <div className="bg-slate-50 p-4 rounded-xl border border-slate-200/60 space-y-2">
+              <span className="font-bold text-indigo-900 uppercase tracking-wide text-[11px] flex items-center gap-1.5">
+                <svg className="w-4 h-4 text-indigo-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                </svg>
+                No Public Transport Available
+              </span>
+              <p>In sectors devoid of public transit links, reimbursement may be allowed as per standard transfer entitlements, subject to a strict maximum cap of <span className="font-bold text-indigo-700 bg-indigo-50 px-1.5 py-0.5 rounded">100 Kilometers</span>.</p>
+            </div>
+          </div>
+
+          {/* Declaration Requirement */}
+          <div className="bg-amber-50 p-4 rounded-xl border border-amber-200 text-slate-700 text-xs space-y-1.5 leading-relaxed shadow-inner">
+            <div className="flex items-start gap-2">
+              <span className="text-amber-600 mt-0.5">
+                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                </svg>
+              </span>
+              <div>
+                <strong className="text-amber-900 uppercase tracking-wider text-[11px] block mb-0.5">Mandatory Audit Declaration:</strong>
+                The individual may be required to render an official declaration certifying that self and all eligible family members actually travelled to the declared destination.
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -195,6 +260,7 @@ export default function OfficerLTC() {
           </ul>
         </div>
       </section>
+      
       {/* TIME LIMIT FOR CLAIMS SUBMISSION (LTC) */}
       <section className="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm">
         <div className="p-4 bg-slate-50 border-b border-slate-200">
@@ -229,6 +295,7 @@ export default function OfficerLTC() {
           </div>
         </div>
       </section>
+      
       {/* CORE AUDIT RULES ACCORDION DECKS */}
       <section className="bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm">
         <div className="p-4 bg-slate-50 border-b border-slate-200">
