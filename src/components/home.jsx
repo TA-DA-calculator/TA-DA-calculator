@@ -124,7 +124,7 @@ export default function Home() {
           {/* Main Glowing Header Group */}
           <div className="space-y-3">
             <h1 className="text-4xl sm:text-6xl font-black tracking-tight text-transparent bg-clip-text bg-gradient-to-b from-white via-amber-100 to-amber-300 drop-shadow-[0_0_25px_rgba(245,158,11,0.85)] flex items-center justify-center gap-3">
-              TRAVEL REGULATIONS
+              e-Pravas
               <span className="inline-flex items-center px-2 py-0.5 rounded border border-amber-400/30 text-[10px] sm:text-xs font-black bg-gradient-to-b from-amber-400 to-amber-500 text-slate-950 uppercase tracking-wider shadow-[0_2px_12px_rgba(245,158,11,0.3)]">
                 BETA
               </span>
