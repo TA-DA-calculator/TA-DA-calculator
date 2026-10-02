@@ -92,7 +92,7 @@ export default function Navbar() {
 
           <div className="text-left">
             <h1 className="text-base font-black tracking-[0.18em] uppercase text-white">
-              e-Pravas
+              TA-DA-Calculator
             </h1>
             <p className="text-[10px] text-amber-300 font-medium uppercase tracking-widest">
               Travel Regulations Portal
